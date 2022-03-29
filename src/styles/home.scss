@@ -1,0 +1,241 @@
+#page-home{
+  display: flex;
+  position: sticky;
+  align-items: stretch;
+  height: 100vh;
+  background: #fdfdfd;
+  background: rgb(2,0,36);
+  background: linear-gradient(35deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 30%, rgba(0,212,255,1) 100%);
+  
+
+  main{
+    flex: 7;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 80px;
+
+    .desc-page{
+      margin-top: 25px;
+      font-size: 24px;
+      line-height: 35px;
+      
+
+      color: #fff;
+    }
+    
+    .logo-lucca{
+
+      display: flex;
+      justify-content: center;
+
+      img{
+        width: 450px;
+        height: 300px;
+      }
+    }
+
+
+    strong{
+      font-size: 60px;
+      display: flex;
+      justify-content: center;
+      font-family: 'Poppins', sans-serif;
+
+      color: #fff;
+    }
+
+    .btn-acess{
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .btn-externo{
+      margin-right: 50px;
+      height: 50px;
+      width: 250px;
+
+      border: #B2FFFF solid 3px;
+      font-size: 20px;
+      color: white;
+
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+
+      background-color: #007FFF;
+
+    }
+
+    .btn-externo:hover{
+      background-color: #002387;
+      color: #fff;
+      border: #7CB9E8 solid 3px;
+    }
+
+    .btn-trailer{
+      height: 50px;
+      width: 250px;
+
+      border: #B2FFFF solid 3px;
+      font-size: 20px;
+      color: white;
+
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+
+      background-color: #007FFF;
+    }
+
+    .btn-trailer:hover{
+      background-color: #002387;
+      color: #fff;
+      border: #7CB9E8 solid 3px;
+    }
+  }
+
+
+
+
+  aside{
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    bottom: 1;
+
+    img {
+      width: 500px;
+      height: 280px;
+      padding: 10px;
+      right: 70px
+    }
+
+      img#logoLucca{
+        position: fixed;
+        bottom: 0;
+        height: 70%;
+        width: 40%;
+
+        opacity: 70%;
+      }
+  }
+
+  @media (max-width: 950px){
+    display: flex;
+    flex-direction: column;
+
+    aside{
+      img#logoLucca{
+        display: none;
+      }
+      img#logoDisney{
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 1353px){
+    img#logoLucca{
+      display: none;
+    }
+
+    img#logoDisney{
+      display: none;
+    }
+
+    aside{
+      display: none;
+    }
+
+      .desc-page{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+  }
+
+  @media (max-width: 950px){
+    display: flex;
+    justify-content: center;
+
+      main{
+        .desc-page{
+          font-size: 24px;
+          padding: 0px;
+          margin-top: 0px;
+        }
+
+        img#logoTextLucca{
+          width: 400px;
+          height: 200px;
+          margin: 10px 0;
+        }
+
+        .btn-acess{
+          margin: 50px 0;
+        }
+      }
+  }
+
+  @media (max-width: 750px){
+    .desc-page{
+      font-size: 16px;
+      padding: 0px;
+      margin-top: 0px;
+    }
+
+    img#logoTextLucca{
+      width: 350px;
+      height: 150px;
+    }
+
+  }
+
+  @media screen and (max-width: 600px) {
+    main{
+      padding: 0px 10px;
+
+      .desc-page{
+        line-height: 30px;
+        flex-wrap: wrap;
+      }
+
+      img#logoTextLucca{
+        width: 250px;
+        height: 150px;
+      }
+    }
+  }
+
+
+  @media screen and (max-width: 400px) {
+    main{
+      padding: 0px 10px;
+
+      .desc-page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+        
+      }
+
+      img#logoTextLucca{
+        width: 150px;
+        height: 90px;
+      }
+
+      .btn-acess{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
